@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="static/Government-Dashboard.css" media="screen">
+    <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-4024">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <!--<div class='u-container-layout u-container-layout-1'>
+                <div class="card-body mr-2 ml-4 mt-4 mb-4">
+                <div id="31b21da83ae313a3cc8cbf58c500504b" class="ww-informers-box-854753"><p class="ww-informers-box-854754"><a href="https://world-weather.info/forecast/indonesia/jakarta/">Read more</a><br><a href="https://world-weather.info/">world-weather.info</a></p>
+                </div>
+                <script async type="text/javascript" charset="utf-8" src="https://world-weather.info/wwinformer.php?userid=31b21da83ae313a3cc8cbf58c500504b"></script>
+                <style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}</style>
+              </div>
+        </div>
+        <div class="col-sm-6">-->
+          <div class='u-container-layout u-container-layout-1'>
+          <!--<div class="card-body mr-4 ml-2 mt-4 mb-4">-->
+            <title>Flask & VGG16 Image Classifier</title>
+            <h2>Select a file to upload</h2>
+            <p>
+              {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    Bawal Putih: {{ messages[0] }}
+                    Bluefin Tuna: {{ messages[1] }}
+                    Lainnya: {{ messages[2] }}
+                {% endif %}
+              {% endwith %}
+            </p>
+            {% if filename %}
+              <div>
+                <img src="static{{ url_for('display_image', filename=filename) }}">
+              </div>
+            {% endif %}
+            <form method="post" action="/fishrec" enctype="multipart/form-data">
+                <dl>
+              <p>
+                <input type="file" name="file" autocomplete="off" required>
+              </p>
+                </dl>
+                <p>
+              <input type="submit" value="Submit">
+                </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}

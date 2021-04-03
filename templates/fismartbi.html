@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+  <link rel="stylesheet" href="static/Business-Intelligence.css" media="screen">
+  <link rel="stylesheet" href="static/Fishing-BI.css" media="screen">
+    <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-ea43">
+      <div class="u-clearfix u-custom-color-2 u-section-1">
+        <h1 class="u-align-center u-heading-font u-text u-title u-text-1">Fismart Business Intelligence</h1>
+        <div class="u-expanded-width u-list u-repeater u-list-1">
+          <div class="u-align-center u-container-style u-custom-color-1 u-list-item u-repeater-item u-list-item-1">
+            <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-xl u-container-layout-1">
+              <a href="{{ url_for('fishingbi')}}" class="nav">
+                <img alt="" class="u-expanded-width-lg u-expanded-width-xl u-image u-image-default u-image-1" data-image-width="1305" data-image-height="959" src="static/images/undraw_fishing_hoxa1.png">
+                </a>
+                <h3 class="u-text u-text-2"><a class="text-secondary stretched-link" href="{{ url_for('fishingbi')}}">Fishermans BI</a>
+                </h3>
+              <div class="u-border-1 u-border-grey-dark-1 u-expanded-width-lg u-expanded-width-xl u-line u-line-horizontal u-line-1"></div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-custom-color-1 u-list-item u-repeater-item u-list-item-2">
+            <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-xl u-container-layout-2">
+              <a href="{{ url_for('govdash')}}" class="nav">
+              <img alt="" class="u-expanded-width-lg u-expanded-width-xl u-image u-image-default u-image-2" data-image-width="1183" data-image-height="791" src="static/images/undraw_Data_trends_re_2cdy1.png">
+              </a>
+              <h3 class="u-text u-text-3"><a class="text-secondary stretched-link" href="{{ url_for('govdash')}}">Governments BI</a></h3>
+              <div class="u-border-1 u-border-grey-dark-1 u-expanded-width-lg u-expanded-width-xl u-line u-line-horizontal u-line-2"></div>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-custom-color-1 u-list-item u-repeater-item u-list-item-3">
+            <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-xl u-container-layout-3">
+              <a href="{{ url_for('finfunds')}}" class="nav">
+              <img alt="" class="u-expanded-width-lg u-expanded-width-xl u-image u-image-default u-image-3" data-image-width="1134" data-image-height="806" src="static/images/undraw_informed_decision_p2lh.png">
+              </a>
+              <h3 class="u-text u-text-4"><a class="text-secondary stretched-link" href="{{ url_for('finfunds')}}">Financial BI</a></h3>
+              <div class="u-border-1 u-border-grey-dark-1 u-expanded-width-lg u-expanded-width-xl u-line u-line-horizontal u-line-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

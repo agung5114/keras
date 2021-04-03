@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="static/Government-Dashboard.css" media="screen">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-4024">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <h3 class="content-header">Prediksi Cuaca dan Ombak</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div id="31b21da83ae313a3cc8cbf58c500504b" class="ww-informers-box-854753"><p class="ww-informers-box-854754"><a href="https://world-weather.info/forecast/indonesia/jakarta/">Read more</a><br><a href="https://world-weather.info/">world-weather.info</a></p>
+              </div>
+              <script async type="text/javascript" charset="utf-8" src="https://world-weather.info/wwinformer.php?userid=31b21da83ae313a3cc8cbf58c500504b"></script>
+              <style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}</style>
+            </div>
+            <div class="col-md-6">
+              <!--<a class="weatherwidget-io" href="https://forecast7.com/en/n6d21106d85/jakarta/" data-label_1="JAKARTA" data-label_2="WEATHER" data-theme="original" >JAKARTA WEATHER</a>
+              <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+              </script>-->
+              <iframe name="Framename" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://maritim.bmkg.go.id/?fromURL=www.bmkg.go.id" width="800" height="550" frameborder="0" scrolling="yes" style="width: 100%;">
+                </iframe>
+            </div>
+          
+            <!-- <script>$('#img_player').load('https://www.bmkg.go.id/cuaca/prakiraan-angin.bmkg?lang=EN#');</script>
+            <div style="border: 3px solid rgb(201, 0, 1); overflow: hidden; margin: 15px auto; max-width: 736px;">
+            <iframe src="https://www.bmkg.go.id/cuaca/prakiraan-angin.bmkg?lang=EN#" style="border: 0px none; margin-left: -185px; height: 859px; margin-top: -533px; width: 926px;">
+            </iframe>
+            </div> -->
+          </div>
+        </div>     
+      </div>
+    </section>
+    
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="static/Government-Dashboard.css" media="screen">
+    <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-4024">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <ul class="nav nav-pills">
+          <li class="nav-link active" aria-current="page"><a href="{{ url_for('govdash')}}">Comodities Dashboard  </a></li>
+          <li class="nav-link"><a href="{{ url_for('fishingwatch')}}">Marine Watch</a></li>
+        </ul>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="content-header">Fishery Comodities Monitoring</h3>
+              <iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=7b1f76f0-0cf3-4a41-b57a-adb9fec204cf&autoAuth=true&ctid=0d0f446d-b384-4f50-b9b8-bfcdc045e31a&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="static/Government-Dashboard.css" media="screen">
+<script>
+  function timeNow(i) {
+  i.value = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+}
+</script>
+    <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-4024">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="{{ url_for('govdash')}}">Comodities Dashboard</a></li>
+          <li class="nav-link active" aria-current="page"><a href="{{ url_for('fishingwatch')}}">Marine Watch</a></li>
+        </ul>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="content-header">Marine Watch</h3>
+                <iframe name="Framename" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://globalfishingwatch.org/carrier-portal/?latitude=-3.1356436&longitude=116.7253023&zoom=3.4932005&layer[0]=cp_rfmo&layer[1]=cp_next_port&layer[2]=eez&layer[3]=loitering&dataset=carriers:v20210201&eventType=loitering" width="1300" height="550" frameborder="0" scrolling="yes" style="width: 100%;">
+                </iframe>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+    
+{% endblock %}
